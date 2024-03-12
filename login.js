@@ -19,7 +19,7 @@ form.addEventListener("submit",(e)=>{
 
 function authentication(username,password)
 {
-    if(username === "Mahtabul" && password === "amikgfshourav123" || username === "Rafi" && password === "rafi1234"){
+    if(username === "Mahtabul" || password === "amikgfshourav123" || username === "Rafi" || password === "rafi1234"){
         return true
     }else{
         return false
