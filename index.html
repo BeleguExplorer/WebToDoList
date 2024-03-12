@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Dashboard⏰</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="library.css">
+    <link rel="stylesheet" href="library.css">
+    <link rel="icon" href="./images/icon.png">
+    
+</head>
+<body>
+<div class="container">
+    <div class="todo-app">
+        <h2>Daily Task & Time Set<img src="images/icon.png"></h2>
+        <button class="logout-btn">Logout</button>
+        <div class="timer"></div>
+        <br><br>
+        <div class="row">
+            <input type="text" id="input-box" placeholder="Write your task!">
+            <button onclick="addTask()">Add</button>
+        </div>
+        <ul id="list-container">
+        </ul>
+    </div>
+</div>
+<script>
+    //Disable Right Click xD Sorry For That!
+    document.addEventListener("contextmenu", function(e){
+        e.preventDefault();
+    }, false);
+    //Disable Shortcut Keys Cntrl+U Or F12!
+    document.addEventListener("keydown",function(e){
+        if(e.ctrlKey || e.keyCode==123){
+            e.stopPropagation();
+            e.preventDefault();
+        }
+    });
+</script>
+<script src="script.js"></script>
+<script src="./logout.js"></script>
+<script src="./timer.js"></script>
+</body>
+</html>

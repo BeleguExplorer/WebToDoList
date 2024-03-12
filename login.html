@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Task & Time⏰</title>
+    <link rel="stylesheet" href="library.css">
+    <link rel="icon" href="./images/icon.png">
+</head>
+<body>
+    <div class="box">
+        <span class="borderLine"></span>
+        <form>
+            <h2>Task&Time Management⏰</h2>
+            <div class="inputBox">
+                <input type="text" name="username">
+                <span>Username</span>   
+                <i></i>
+            </div>
+            <div class="inputBox">
+                <input type="password" name="password">
+                <span>Password</span>
+                <i></i>
+            </div>
+            <div class="links">
+                <a href="#">Created By Mahtabul Shourav</a>
+                <!-- <a href="#">Sign Up</a> -->
+            </div>
+            <input type="submit" value="Login">
+        </form>
+    </div>
+    <script>
+        //Disable Right Click xD Sorry For That!
+        document.addEventListener("contextmenu", function(e){
+            e.preventDefault();
+        }, false);
+        //Disable Shortcut Keys Cntrl+U Or F12!
+        document.addEventListener("keydown",function(e){
+            if(e.ctrlKey || e.keyCode==123){
+                e.stopPropagation();
+                e.preventDefault();
+            }
+        });
+    </script>
+    <script src="./login.js"></script>
+</body>
+</html>
